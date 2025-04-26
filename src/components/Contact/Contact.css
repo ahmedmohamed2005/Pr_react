@@ -1,0 +1,14 @@
+.Contact .Subject{
+    padding-bottom: 200px;
+    padding-top: 10px;
+}
+.Contact .iframe_Bravo {
+    height: 400px;
+    width: 100%;
+}
+
+@media (max-width:995px)  {
+    .Contact .rowing{
+        flex-direction: column;
+    }
+}

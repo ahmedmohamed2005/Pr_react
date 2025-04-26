@@ -1,0 +1,44 @@
+.News .Endcard{
+
+    border-top: 1px dotted var(--nav-bg);
+}
+.News .product{
+    position: relative;
+    transition: 0.5s;
+    border: 1px solid var(--nav-bg);
+    color: var(--nav-bg);
+    border-radius: 0 0  10px 10px;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+.News .product:hover{
+    box-shadow: var(--nav-bg) 0px 10px 10px, var(--nav-bg) 6px 6px;
+}
+.News .product:hover .dropDown{
+    padding:10px 20px;
+    width: max-content;
+    opacity: 1;
+    height: auto;
+    transform: rotate(360deg);
+}
+
+.News .dropDown{
+    position: absolute;
+    color: var(--dark-color);
+    background-color: var(--white-color);
+    border-radius: 10px;
+    top: 20px;
+    left: 15px;
+    transition: 0.3s;
+    opacity: 0;
+    padding: 0;
+}
+
+.News .dropDown div p:nth-of-type(1) ,
+.News .dropDown div p:nth-of-type(2){
+    color: var(--main-color);
+    font-weight: 400;
+}
+.News .dropDown div p:nth-of-type(1){
+    color: #000;
+}

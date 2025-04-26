@@ -1,0 +1,36 @@
+.Featuerd .swiper-pagination-bullet{
+    background-color: #ccc;
+}
+.Featuerd .swiper-pagination-bullet-active{
+    background-color: var(--main-color) ;
+}
+.Featuerd .bannerImg{
+    overflow: hidden;
+}
+.Featuerd .bannerImg .banner{
+    transition: 0.5s;
+}
+.Featuerd:hover .banner{
+    transform: scale(1.1);
+}
+
+@media (max-width : 1000px) {
+.Featuerd{
+    position: relative;
+}
+.Featuerd ul{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+}
+@media (max-width : 600px) {
+.Featuerd{
+    position: relative;
+}
+.Featuerd ul{
+    position: absolute;
+    top: 50px;
+    left:0;
+}
+}

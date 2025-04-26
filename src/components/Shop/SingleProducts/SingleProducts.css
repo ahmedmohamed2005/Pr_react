@@ -1,0 +1,64 @@
+
+.smallImg div img{
+    border-radius: 10px;
+    border: 1px solid #fff;
+
+    transition: 0.5s;
+}
+.smallImg div:hover img{
+    border-radius: 50%;
+    border: 1px solid #f46969;
+    box-shadow: rgba(255, 255, 255, 0.3) 0px 19px 38px, rgba(255, 255, 255, 0.22) 0px 15px 12px;
+}
+.productImg{
+    height: 500px;
+    overflow: hidden;
+}
+.productImg img{
+    animation: img 1s infinite  alternate;
+    filter: blur(2px);
+   
+}
+
+.btn_single{
+    transition: 0.7s !important;
+}
+.btn_single:hover{
+    background-color: var(--white-color) !important;
+    color: black !important;
+}
+@keyframes img {
+    100%{
+        transform: scale(1.1);
+        filter: blur(0px);
+
+    }
+}
+
+ .links a{
+    padding: 10px 15px;
+    border: 1px solid transparent;
+    transition: 0.3s;
+    text-decoration: none;
+color: var(--white-color);
+}
+ .links a.active{
+    background-color: #fff !important;
+    color: black;
+}
+ .links a:hover:not(a.active){
+    border: 1px solid #fff;
+    color: var(--white-color);
+}
+@media (max-width:992px) {
+    .SingleProduct{
+        margin-top: 10px;
+    }
+    .SingleProduct .card{
+        flex-direction: column;
+    }
+    .SingleProduct .smallImg{
+        width: calc(100%/4);
+    }
+
+}

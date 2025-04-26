@@ -1,0 +1,169 @@
+.About .workJsAbout div:nth-of-type(1) ul li{
+    background-color: #a6a5a5 !important;
+    cursor: pointer;
+    }
+    .About .workJsAbout div:nth-of-type(1) ul li .dropDown{
+    height: 0;
+    opacity: 0;
+    padding: 0;
+    transition: 0.5s;
+    }
+    .About .workJsAbout div:nth-of-type(1) ul li .dropDown.open{
+    height: auto;
+    opacity: 1;
+    padding: 10px;
+    background-color: var(--white-color);
+    }
+    /* card About */
+    
+    
+    .About .card{
+        background-color: black;
+        cursor: pointer;
+        margin: 10px 0;
+        transition: 0.3s;
+        overflow: hidden;
+    }
+    .About .card:hover{
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: rgba(155, 151, 151, 0.16) 0px 10px 36px 0px, rgba(144, 141, 141, 0.06) 0px 0px 0px 1px;
+    }
+    .About .card .card-img img{
+        filter: grayscale(0.6);
+        transition: 0.3s;
+        width: 100%;
+    }
+    .About .card:hover .card-img img{
+        filter: grayscale(0);
+    }
+    .About .card .card-body .datails{
+        display: -webkit-box;
+        /* -webkit-line-clamp: 4; */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-height: 6em;
+    }
+    .About .card .card-body .icons{
+        padding: 3px 7px;
+        background-color: #fff;
+        color: black;
+        border-radius: 10px;
+        font-size: 17px;
+        text-align: center;
+    }
+    
+    .About .SecTitle ul li a.active::after{
+        content: '';
+        padding-right: 5px;
+        color: #fff;
+    }
+    .About .SecTitle ul li a.active::before{
+        content: '';
+        padding-right: 5px;
+        color: #fff;
+    }
+    
+    @media (max-width:1285px) {
+        .About .col-lg-9 .bigImage {
+            width: 1000px;
+        }
+    }
+    
+    @media (max-width:992px) {
+        .About .TopCategory{
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            justify-content: center;
+        }
+        .About .col-lg-9 .bigImage {
+            width: 700px;
+        }
+        
+    }
+    @media (max-width:680px) {
+        .About .col-lg-9 .bigImage {
+            width: 560px;
+        }
+    }
+    @media (max-width:450px) {
+        .About .col-lg-9 .bigImage {
+            width: 400px;
+        }
+    
+    }
+    /* ---------- */
+    .skill-bar {
+        background: #333;
+        margin: 14px 0;
+        position: relative;
+    }
+    
+    .skill-color {
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        border-left: 1px solid #fff;
+        color: white;
+        font-size: 16px;
+        font-weight: 400;
+        font-style: italic;
+        height: 30px;
+        text-align: center;
+        width: 0%;
+        transition: width 1.5s ease-in-out;
+    }
+    
+    .skill-color.html {
+        background: #2196F3;
+    }
+    
+    .skill-color.css {
+        background: #B71C1C;
+    }
+    
+    .skill-color.js {
+        background: #757575;
+    }
+    
+    .skill-color.jquery {
+        background: #FFA000;
+    }
+    
+    .skill-color.bootstrap {
+        background: #00C853;
+    }
+    
+    .skill-color.react {
+        background: #00695C;
+    }
+    
+    
+    
+    
+    
+    .card_skill{
+        margin-top: 20px;
+        width: 300px;
+        height: 30px;
+        background-color: var(--nav-bg);
+        position: relative;
+        overflow: hidden;
+    }
+    .card_skill::after{
+        content: 'css=>70';
+        position: absolute;
+        background-color: #00C853;
+        width: 0;
+        left: -50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.5s;
+    }
+    .card_skill.open::after{
+        width: 70%;
+        left: 0;
+        height: 100%;
+    }

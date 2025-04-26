@@ -1,0 +1,202 @@
+.Footer {
+    background-color: var(--nav-bg);
+    min-height: 100vh;
+}
+.Footer .inputFoot{
+    border: transparent;
+}
+.Footer .inputFoot , 
+.Footer .btnfoot{
+    padding: 20px;
+}
+.Footer .btnfoot{
+    background-color: var(--dark-color);
+    border-radius: 0  10px 10px 0 !important;
+    
+}
+.Footer .btnfoot:hover{
+    background-color: var(--dark-color) !important;
+}
+
+
+.Footer .ulLink{
+    margin-top: 100px;
+}
+.Footer .ulLink .card{
+    background-color: transparent;
+    color: var(--white-color);
+    border: none;
+}
+.Footer .ulLink .card li div{
+    height: 0;
+    padding: 0;
+    opacity: 0;
+    width: 0;
+}
+.Footer .ulLink .dropDown{
+    color: #949494;
+}
+.Footer .ulLink .dropDown li{
+    transition: 0.3s;
+    cursor: pointer;
+}
+.Footer .ulLink .dropDown li:hover{
+    color: var(--main-color);
+    letter-spacing: 1.2px;
+}
+.Endfooter{
+    min-width: 100%;
+    background-color: var(--dark-color);
+    min-height: 70px;
+    padding: 20px;
+}
+@media (max-width : 1300px  ) {
+    .cardtop{
+        gap: 100px !important;
+        align-items: flex-start;
+    }
+    .Divinput{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .Divinput input{
+        width: 300px;
+        padding: 10px !important;
+    }
+    .Divinput button{
+        padding: 10px; 
+        width: 150px;
+      
+    }
+
+}
+
+@media (max-width : 1000px  ) {
+    .Divinput{
+        flex-direction: row !important;
+        gap: 0px;
+    }
+    .Divinput input{
+        width: max-content;
+        padding: 20px !important;
+    }
+    .Divinput button{
+        padding: 20px; 
+        width: max-content;
+      
+    }
+    .cardtop{
+        display: flex;
+        gap: 20px !important;
+        flex-direction: column !important;
+    }
+    .Divinput{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    .datalis{
+        width: 100%;
+        
+    }
+    .datalis b{
+        white-space: nowrap;
+        width: 100px;
+        font-size: 33px !important;
+    }
+    .datalis p{
+        white-space: nowrap;
+        width: 100px;
+        font-size: 13px !important;
+    }
+    
+.Footer .card_endfoot{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.Footer .ulLink{
+    overflow: hidden;
+    position: relative;
+    display: flex ;
+  flex-direction: column ;
+  align-items: flex-start;
+}
+
+.Footer .ulLink .dropDown{
+    position: relative;
+     left:-50%;
+     top: 20px;
+    opacity: 0;
+    height: 0;
+    transition: 0.5s;
+}
+.Footer .ulLink .dropDown.open{
+    height: auto;
+    width: max-content;
+      left: 0;
+      height: auto;
+    opacity: 1;
+}
+.Footer .ulLink .card{
+    width: 100%;
+}
+.Footer .ulLink .card li{
+    display: flex;
+    justify-content: space-between;
+}
+.Footer .ulLink .card li div div:nth-of-type(2){
+    display: none;
+}
+.Footer .ulLink .card li div div:nth-of-type(2).rotate{
+    transform: rotate(360deg);
+    background-color: rgb(7, 62, 243);
+}
+.Footer .ulLink .card li div{
+    height: auto;
+    padding: 0;
+    opacity: 1;
+    background-color: var(--white-color);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: var(--dark-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      font-size: 13px;
+}
+}
+@media (max-width : 770px  ) {
+ 
+    .Footer > div:nth-of-type(1) {
+        margin: 20px 20px !important;
+    }
+    .datalis b{
+        white-space: wrap;
+        width: 100px;
+        font-size: 33px !important;
+    }
+    .datalis p{
+        white-space: nowrap;
+        width: 100px;
+        font-size: 11px !important;
+    }
+    .Divinput{
+        flex-direction: column !important;
+        gap: 5px;
+    }
+    .Endfooter{
+        
+        background-color: var(--dark-color);
+        min-height: 70px;
+        padding: 5px;
+        margin: 0 !important;
+    }
+}
+@media (max-width : 400px  ) {
+    .Footer > div:nth-of-type(1) {
+        margin: 0 !important;
+    }
+}

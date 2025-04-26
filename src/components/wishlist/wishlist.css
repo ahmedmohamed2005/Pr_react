@@ -1,0 +1,48 @@
+.div_pro_wish .flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div_pro_wish{
+    flex-wrap: wrap;
+    display: flex;
+    gap: 10px;
+}
+.product_wish {
+    width: calc((100% - 20px) / 3);
+    border : 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
+    gap: 20px;
+}
+
+.product_wish  .images img{
+    width: 100%;
+    height: 230px;
+  border-radius: 10px;
+}
+.product_wish  div img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.heart ,
+.cart {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #000;
+    border: 1px solid #fff;
+    transition: 0.4s;
+}
+
+.heart:hover ,
+.cart:hover ,
+.product_wish  .images:hover img{
+    transform: scale(1.2);
+}
+.heart:hover ,
+.cart:hover {
+    color: #000;
+}

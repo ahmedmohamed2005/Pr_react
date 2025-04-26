@@ -1,0 +1,157 @@
+.Shop .shop_slider .product{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 10px;
+    gap: 5px;
+    
+}
+
+.Shop .shop_slider .product b{
+    font-weight: 200;
+    font-size: 14px;
+}
+.Shop .shop_slider .product img{
+    padding: 0;
+    width: 100px;
+    border-left: 0.2px solid var(--white-color);
+    border-right: 0.2px solid var(--white-color);
+}
+.Shop .icon{
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: var(--white-color);
+}
+.Shop .icon:hover{
+    transform: scale(1.2);
+    
+}
+.Shop .icon.active{
+    color: var(--main-color);
+}
+.Shop .box{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.Shop .box > div{
+    width: calc((100% - 40px) / 3);
+    display: flex;
+}
+.Shop .box.change{
+    flex-direction: column;
+}
+.Shop .box.change > div{
+    width: 100%;
+    height: 300px;
+}
+.Shop .box.change div  .product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    border: 1px solid #888;
+    width: 100%;
+    background-color: var(--dark-color);
+    padding: 10px 20px;
+    box-shadow: #888 0px 3px 5px;
+    border-radius: 12px;
+    transition: 0.5s;
+}
+.Shop .box.change div  .product:hover{
+    box-shadow: #888 0px 0px 0px;
+
+}
+.Shop .box.change div .product img{
+    width: 200px;
+}
+.detalise p , 
+.detalise b {
+color: #949090;
+}
+ .box.change .detalise p{
+    text-overflow: clip;
+    white-space: wrap;
+    overflow: visible;
+    text-align: start !important;
+}
+.detalise p{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0;
+    width: 100%;
+}
+ .box.change .detalise b{
+    width: 100%;
+white-space: wrap;
+
+}
+ .detalise{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5;
+    color: #888;
+    overflow: hidden;
+}
+ .detalise b{
+text-overflow: ellipsis;
+white-space: nowrap;
+overflow: hidden;
+margin: 0;
+}
+ .box.change .detalise{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important;
+}
+@media (max-width:992px) {
+    .Shop .box > div{
+        width: calc((100% - 20px) / 2);
+    }
+}
+@media (max-width:768px) {
+    .Shop .box > div{
+        width: 100% ;
+    }
+ 
+}
+
+@media (max-width:1000px) {
+
+    .Shop .Prosucts_header > div:nth-of-type(1){
+        display: flex;
+        flex-direction: column;
+    }
+    .Shop .Prosucts_header > div:nth-of-type(1) > div:nth-of-type(1){
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .Shop .Prosucts_header > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2){
+      display: none;
+    }
+    .Shop .Prosucts_header > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(3){
+   width: 100%;
+    }
+    .Shop .Prosucts_header > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(3) > div:nth-of-type(2) .product{
+        display: flex;
+        flex-direction: row;
+         gap: 20px;
+        
+    }
+    .Shop .Prosucts_header > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(3) > div:nth-of-type(2) .product .card-body{
+        align-items: flex-start;
+    }
+    .Shop .Prosucts_header > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(3) > div:nth-of-type(2) .product .images{
+        width:30% !important;
+    }
+    .Shop .Prosucts_header > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(3) > div:nth-of-type(2) .product .images img{
+        width: 100%;
+    }
+
+  
+}

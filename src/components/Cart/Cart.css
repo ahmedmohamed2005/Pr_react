@@ -1,0 +1,84 @@
+.table *{
+    text-transform: capitalize !important;
+    font-weight: 400;
+}
+
+.Cart tr td{
+    color: #888;
+}
+
+.Cart .totall{
+    border: 2px dashed #888;
+    text-align: center;
+    padding: 15px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.Cart .totall:hover{
+    border-radius: 15px;
+    border: none;
+    outline: 1px solid var(--main-color);
+    transform: scale(1.1);
+    box-shadow: var(--nav-color) 0px 54px 55px, var(--nav-color) 0px -12px 30px, var(--nav-color) 0px 4px 6px, var(--nav-color) 0px 12px 13px, var(--nav-color) 0px -3px 5px;
+    background-color: #112222;
+}
+
+@media (max-width:992px) {
+    .Cart .TopCategory img{
+        display: none;
+    }
+    .Cart .TopCategory .text-uppercase::after{
+        width: 455%;
+    }
+    .Cart .justify-content-between.w-50{
+        width: 95% !important;
+    }
+    
+}
+@media (max-width: 550px) {
+    .Cart table {
+        width: 100%;
+        /* table-layout: fixed; */
+    }
+    .Cart th{
+        font-size: 8px !important;
+        text-align: center;
+    }
+    .Cart td {
+        font-size: 12px;
+        padding: 8px; 
+    }
+
+    .Cart tr td .proImg {
+        width: 50px;
+    }
+    .Cart .proTitle{
+        font-size: 10px;
+    }
+
+    .Cart tr td:nth-of-type(1) {
+        display: flex;
+        justify-content: center;
+    }
+
+    .Cart tr td .proImg img {
+        width: 100%;
+        height: auto;
+    }
+
+    .Cart .input-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Cart .input-group input {
+        width: 40px !important; 
+    }
+
+    .Cart .btn-danger {
+        font-size: 12px;
+        padding: 4px 10px;
+    }
+}
+
